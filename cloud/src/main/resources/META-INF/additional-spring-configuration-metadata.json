@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "ipaddress",
+    "type": "java.lang.String",
+    "description": "A description for 'ipaddress'"
+  },
+  {
+    "name": "aerospike.port",
+    "type": "java.lang.String",
+    "description": "A description for 'aerospike.port'"
+  }
+]}

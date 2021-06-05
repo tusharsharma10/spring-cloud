@@ -26,7 +26,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.2.RELEASE'
-	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	//implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	
+	implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+	
+	implementation group: 'com.aerospike', name: 'spring-data-aerospike', version: '2.0.0.RELEASE'
+
 	
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
