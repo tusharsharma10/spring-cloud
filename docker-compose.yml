@@ -1,0 +1,40 @@
+version: '2'
+services:
+    eureka:
+        container_name: eureka
+        build: eureka/
+            
+        image: eureka:latest
+        ports:
+            - 8761:8761
+        
+    zuul:
+        container_name: zuul
+        build: zuul/
+            
+        image: zuul:latest
+        ports:
+            - 8080:8080
+        depends_on:
+            - eureka
+    demo:
+        container_name: demo
+        build: demo/
+            
+        image: demo:latest
+        ports:
+            - 8071:8071
+        depends_on:
+            - eureka
+            - zuul
+    cloud:
+        container_name: cloud
+        build: cloud/
+            
+        image: cloud:latest
+        ports:
+            - 8072:8072
+        depends_on:
+            - eureka
+            - zuul
+        

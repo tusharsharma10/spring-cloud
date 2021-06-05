@@ -1,0 +1,6 @@
+.metadata/
+**/build/**
+**/bin/**
+**/gradlew
+**/gradle/**
+**/gradlew.bat
